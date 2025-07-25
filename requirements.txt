@@ -1,0 +1,7 @@
+pandas
+numpy
+requests
+pytz
+pyotp
+SmartApi==1.0.2  # Adjust version if needed
+
