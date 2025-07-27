@@ -291,7 +291,7 @@ def check_trading_conditions(symbol, symbol_token, tick_size, exchange="NFO"):
 
     if fc_open > poc:
         buy_conditions = [
-            fc_open > poc,
+            
             atr > open_to_high,
             current_ltp > fc_high  # Breakout above first candle high
         ]
@@ -307,7 +307,7 @@ def check_trading_conditions(symbol, symbol_token, tick_size, exchange="NFO"):
             logger.info(f"No buy signal for {symbol}")
     elif fc_open < poc:
         sell_conditions = [
-            fc_open < poc,
+           
             atr > open_to_low,
             current_ltp < fc_low  # Breakout below first candle low
         ]
