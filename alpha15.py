@@ -112,7 +112,7 @@ def send_telegram_message(message):
 def calculate_atr(symbol_token, exchange="NFO"):
     ist = pytz.timezone('Asia/Kolkata')
     today = datetime.now(ist).date()
-    from_date = today - timedelta(days=90)
+    from_date = today - timedelta(days=30)
     fromdate = f"{from_date.strftime('%Y-%m-%d')} 09:15"
     todate = f"{today.strftime('%Y-%m-%d')} 15:30"
     historic_param = {
